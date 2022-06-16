@@ -10,6 +10,9 @@ tipo_vernice - VARCHAR(20) - NOTNULL
 alimentazione - VARCHAR(10) - NOTNULL
 cilindrata_cc - SMALLINT - NULL
 potenza_Kw - SMALLINT - NOTNULL
+serbatoio_lt - TINYINT - NULL
+batteria_Kwh - TINYINT - NULL
+potenza_ricarica_kW - TINYINT - NULL
 immagine - TEXT - NOTNULL - DEFAULT("/img/no_img.png")
 cambio - VARCHAR(10) - NOTNULL
 n_marce - TINYINT - NULL
