@@ -1,36 +1,39 @@
 AUTO USATE
 
-id
-targa
-marca 
-modello
-versione
-colore
-tipo_vernice 
-alimentazione 
-cilindrata 
-potenza
-cambio
-n_porte
-n_posti 
-km_fatti
-mese_anno_immatr.
-optional
-descrizione
-supercar
-tipo_carrozzeria
-materiale_interni
-adatta_neopatentati
-auto_epoca
-n_prec_proprietari
-danni_motore
-danni_carrozzeria
-consumi
-classe_emissioni
-veicolo_comm
-venditore_privato
-nazione
-regione
-provincia
-comune
-prezzo
+id - INT - PRIMARY KEY - NOTNULL - AUTOINCREMENT- UNIQUE
+targa - VARCHAR(10) - NOTNULL - UNIQUE 
+marca - VARCHAR(20) - NOTNULL
+modello - VARCHAR(20) - NOTNULL
+versione - VARCHAR(10) - NOTNULL
+colore - VARCHAR(20) - NOTNULL
+tipo_vernice - VARCHAR(20) - NOTNULL
+alimentazione - VARCHAR(10) - NOTNULL
+cilindrata_cc - SMALLINT - NULL
+potenza_Kw - SMALLINT - NOTNULL
+immagine - TEXT - NOTNULL - DEFAULT("/img/no_img.png")
+cambio - VARCHAR(10) - NOTNULL
+n_marce - TINYINT - NULL
+n_porte - TINYINT - NOTNULL
+n_posti - TINYINT -NOTNULL
+km_fatti - INT - NOTNULL
+data_immatric - DATE - NOTNULL
+paese_immatric - VARCHAR(3) -NOTNULL
+optional - TEXT - NULL
+descrizione - TEXT - NULL
+supercar - TINYINT - NOTNULL - DEFAULT(false)
+tipo_carrozzeria - VARCHAR(10) - NULL
+materiale_interni - VARCHAR(30) - NULL
+adatta_neopatentati - TINYINT - NOTNULL
+auto_epoca - TINYINT - NOTNULL
+n_prec_proprietari - TINYINT - NOTNULL
+danni_motore - TINYINT - NOTNULL
+danni_carrozzeria - TINYINT - NOTNULL
+consumi - VARCHAR(10) - NULL
+classe_emissioni - VARCHAR(10) - NOTNULL
+veicolo_comm - TINYINT - NOTNULL
+venditore_privato - TINYINT - NOTNULL
+nazione - VARCHAR(3) - NOTNULL
+regione - VARCHAR(2) - NOTNULL
+provincia - VARCHAR(2) - NOTNULL
+comune - VARCHAR(30) - NOTNULL
+prezzo - MEDIUMINT - NOTNULL
